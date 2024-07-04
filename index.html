@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const shareType = urlParams.get('shareType');
+            const itemID = urlParams.get('itemID');
+            const deeplink = `yourapp://deeplink?shareType=${shareType}&itemID=${itemID}`;
+            window.location.href = deeplink;
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html> 
